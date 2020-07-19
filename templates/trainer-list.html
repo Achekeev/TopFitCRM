@@ -1,0 +1,8 @@
+<h1>Trainers List</h1>
+<ul>
+{% for trainer in object_list %}
+    <a>{{ trainer.name }}</a>
+{% empty %}
+    <li>No Trainers yet.</li>
+{% endfor %}
+</ul>

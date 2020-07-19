@@ -1,0 +1,8 @@
+<h1>Clients</h1>
+<ul>
+{% for client in object_list %}
+    <a>{{ client.name }}</a>
+{% empty %}
+    <li>No clients yet.</li>
+{% endfor %}
+</ul>
